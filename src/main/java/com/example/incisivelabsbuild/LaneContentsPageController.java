@@ -37,7 +37,7 @@ public class LaneContentsPageController {
     public static int currentIterativeRunTime = 0;
 
 
-    public void initialize() {
+    public void initialize() throws IOException {
         //Check current run time before initializing lane content page
         if (currentIterativeRunTime < details.getNumberOfGelRuns()){
             //Create Gel Run Object
@@ -79,7 +79,11 @@ public class LaneContentsPageController {
         } else{
             //TODO handle session exit on completion of gel runs
             //Navigate to final screen
-            stage.close();
+            FXMLLoader fxmlLoader = new FXMLLoader(DetailsPageTwoController.class.getResource("final-screen.fxml"));
+            Scene scene = new Scene(fxmlLoader.load(), 1178, 700);
+            stage.setTitle("Incisive Lab");
+            stage.setScene(scene);
+            stage.show();
         }
 
 

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.chart.CategoryAxis?>
 <?import javafx.scene.chart.LineChart?>
@@ -15,12 +14,11 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #0d47a1;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.incisivelabsbuild.LinearityPageController">
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.incisivelabsbuild.LinearityPageController">
    <children>
-      <TableView fx:id="bandIntensityTable" layoutX="421.0" layoutY="55.0" prefHeight="136.0" prefWidth="749.0">
+      <TableView fx:id="bandIntensityTable" layoutX="216.0" layoutY="104.0" prefHeight="127.0" prefWidth="749.0">
         <columns>
            <TableColumn prefWidth="250.0" text="Protein concentration (mg/mL)">
               <cellValueFactory>
@@ -49,43 +47,43 @@
            </TableColumn>
         </columns>
       </TableView>
-      <LineChart fx:id="tsRepOneChart" alternativeColumnFillVisible="true" layoutX="392.0" layoutY="252.0" prefHeight="238.0" prefWidth="389.0">
+      <LineChart fx:id="tsRepOneChart" alternativeColumnFillVisible="true" layoutX="102.0" layoutY="297.0" prefHeight="205.0" prefWidth="345.0">
         <xAxis>
-          <NumberAxis label="Protein Concentration (mg/mL)" side="BOTTOM" tickLabelFill="WHITE">
+          <NumberAxis label="Protein Concentration (mg/mL)" side="BOTTOM">
                <tickLabelFont>
                   <Font name="Poppins Medium" size="9.0" />
                </tickLabelFont>
           </NumberAxis>
         </xAxis>
         <yAxis>
-          <NumberAxis animated="false" label="Band Intensity (AUC)" side="LEFT" tickLabelFill="WHITE">
+          <NumberAxis animated="false" label="Band Intensity (AUC)" side="LEFT">
                <tickLabelFont>
                   <Font name="Poppins Medium" size="10.0" />
                </tickLabelFont></NumberAxis>
         </yAxis>
       </LineChart>
-      <LineChart fx:id="tsRepTwoChart" alternativeColumnFillVisible="true" layoutX="781.0" layoutY="252.0" prefHeight="238.0" prefWidth="389.0">
+      <LineChart fx:id="tsRepTwoChart" alternativeColumnFillVisible="true" layoutX="467.0" layoutY="305.0" prefHeight="205.0" prefWidth="345.0">
          <xAxis>
-            <NumberAxis label="Protein Concentration (mg/mL)" side="BOTTOM" tickLabelFill="WHITE" />
+            <NumberAxis label="Protein Concentration (mg/mL)" side="BOTTOM" />
          </xAxis>
          <yAxis>
-            <NumberAxis label="Band Intensity (AUC)" side="LEFT" tickLabelFill="WHITE" />
+            <NumberAxis label="Band Intensity (AUC)" side="LEFT" />
          </yAxis>
       </LineChart>
-      <LineChart fx:id="tsRepThreeChart" alternativeColumnFillVisible="true" layoutX="392.0" layoutY="490.0" prefHeight="238.0" prefWidth="389.0">
+      <LineChart fx:id="tsRepThreeChart" alternativeColumnFillVisible="true" layoutX="102.0" layoutY="494.0" prefHeight="205.0" prefWidth="345.0">
          <xAxis>
-            <NumberAxis label="Protein Concentration (mg/mL)" side="BOTTOM" tickLabelFill="WHITE" />
+            <NumberAxis label="Protein Concentration (mg/mL)" side="BOTTOM" />
          </xAxis>
          <yAxis>
-            <NumberAxis label="Band Intensity (AUC)" side="LEFT" tickLabelFill="WHITE" />
+            <NumberAxis label="Band Intensity (AUC)" side="LEFT" />
          </yAxis>
       </LineChart>
-      <LineChart fx:id="rsRepOneChart" alternativeColumnFillVisible="true" layoutX="782.0" layoutY="490.0" prefHeight="238.0" prefWidth="389.0">
+      <LineChart fx:id="rsRepOneChart" alternativeColumnFillVisible="true" layoutX="467.0" layoutY="502.0" prefHeight="205.0" prefWidth="345.0">
          <xAxis>
-            <NumberAxis label="Protein Concentration (mg/mL)" side="BOTTOM" tickLabelFill="WHITE" />
+            <NumberAxis label="Protein Concentration (mg/mL)" side="BOTTOM" />
          </xAxis>
          <yAxis>
-            <NumberAxis label="Band Intensity (AUC)" side="LEFT" tickLabelFill="WHITE" />
+            <NumberAxis label="Band Intensity (AUC)" side="LEFT" />
          </yAxis>
       </LineChart>
       <CategoryAxis layoutX="448.0" layoutY="1.0" side="BOTTOM" />
@@ -97,7 +95,7 @@
             <Font name="Poppins Medium" size="18.0" />
          </font>
       </Button>
-      <Button fx:id="backBtn" layoutX="917.0" layoutY="747.0" mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: #0091FF;" text="BACK" textFill="WHITE">
+      <Button fx:id="backBtn" layoutX="901.0" layoutY="747.0" mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: #0091FF;" text="BACK" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
@@ -105,16 +103,15 @@
             <Font name="Poppins Medium" size="18.0" />
          </font>
       </Button>
-      <Label alignment="CENTER" layoutX="421.0" layoutY="14.0" prefHeight="41.0" prefWidth="338.0" style="-fx-background-color: #0091fa;" text="BAND INTENSITY (AUC)" textAlignment="CENTER" textFill="WHITE">
+      <Label alignment="CENTER" layoutX="216.0" layoutY="63.0" prefHeight="41.0" prefWidth="749.0" style="-fx-background-color: #0091fa;" text="BAND INTENSITY (AUC)" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <AnchorPane prefHeight="676.0" prefWidth="263.0">
+      <AnchorPane prefHeight="798.0" prefWidth="63.0">
          <children>
             <AnchorPane layoutY="-14.0">
                <children>
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="800.0" layoutY="13.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-background-color: white;" width="263.0" />
                   <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="27.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@icons/settings-icon.png" />
@@ -184,62 +181,81 @@
                         <ColorAdjust />
                      </effect>
                   </ImageView>
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cdd4da" height="400.0" layoutY="106.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="8.0" />
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="64.0" layoutY="505.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="8.0" />
+                  <VBox alignment="CENTER" layoutY="12.0" prefHeight="800.0" prefWidth="65.0" spacing="30.0" style="-fx-background-color: #9e9e9e;">
+                     <children>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/settings-icon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/microscope-icon.png" />
+                           </image>
+                           <effect>
+                              <ColorAdjust />
+                           </effect>
+                        </ImageView>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/saveas-icon.png" />
+                           </image>
+                           <effect>
+                              <ColorAdjust />
+                           </effect>
+                        </ImageView>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/chart-icon.png" />
+                           </image>
+                           <effect>
+                              <ColorAdjust />
+                           </effect>
+                        </ImageView>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/dna-icon.png" />
+                           </image>
+                           <effect>
+                              <ColorAdjust />
+                           </effect>
+                        </ImageView>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/magnifyglass-icon.png" />
+                           </image>
+                           <effect>
+                              <ColorAdjust />
+                           </effect>
+                        </ImageView>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/testtube-icon.png" />
+                           </image>
+                           <effect>
+                              <ColorAdjust />
+                           </effect>
+                        </ImageView>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/2testtube-icon.png" />
+                           </image>
+                           <effect>
+                              <ColorAdjust />
+                           </effect>
+                        </ImageView>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/germ-icon.png" />
+                           </image>
+                           <effect>
+                              <ColorAdjust />
+                           </effect>
+                        </ImageView>
+                     </children>
+                  </VBox>
                </children>
             </AnchorPane>
-            <VBox alignment="CENTER_LEFT" layoutX="71.0" prefHeight="711.0" prefWidth="192.0" spacing="8.0" style="-fx-background-color: white;">
-               <children>
-                  <Label contentDisplay="CENTER" prefHeight="50.0" prefWidth="223.0" style="-fx-padding: 10px;" text="Details" textFill="#030101">
-                     <font>
-                        <Font name="Poppins Medium" size="18.0" />
-                     </font>
-                     <opaqueInsets>
-                        <Insets />
-                     </opaqueInsets>
-                  </Label>
-                  <Label contentDisplay="CENTER" prefHeight="50.0" prefWidth="264.0" style="-fx-border-width: 0.1;" text="Formula Reference" textAlignment="CENTER" textFill="#90a4ae">
-                     <font>
-                        <Font name="Poppins Medium" size="14.0" />
-                     </font>
-                  </Label>
-                  <Label contentDisplay="CENTER" prefHeight="50.0" prefWidth="264.0" style="-fx-border-width: 0.1;" text="Lane Contents" textAlignment="CENTER" textFill="#90a4ae">
-                     <font>
-                        <Font name="Poppins Medium" size="14.0" />
-                     </font>
-                  </Label>
-                  <Label contentDisplay="CENTER" prefHeight="50.0" prefWidth="264.0" style="-fx-border-width: 0.1;" text="Lane Indicator" textAlignment="CENTER" textFill="#90a4ae" wrapText="true">
-                     <font>
-                        <Font name="Poppins Medium" size="14.0" />
-                     </font>
-                  </Label>
-                  <Label contentDisplay="CENTER" prefHeight="50.0" prefWidth="264.0" style="-fx-border-width: 0.1;" text="Raw Data" textAlignment="CENTER" textFill="#90a4ae">
-                     <font>
-                        <Font name="Poppins Medium" size="14.0" />
-                     </font>
-                  </Label>
-                  <Label contentDisplay="CENTER" prefHeight="50.0" prefWidth="264.0" style="-fx-border-width: 0.1;" text="Mass Correction &amp; Normalised To Dilution" textFill="#90a4ae" wrapText="true">
-                     <font>
-                        <Font name="Poppins Medium" size="14.0" />
-                     </font>
-                  </Label>
-                  <Label contentDisplay="CENTER" prefHeight="50.0" prefWidth="264.0" style="-fx-border-width: 0.1;" text="Protein Concentration" textAlignment="CENTER" textFill="#90a4ae" wrapText="true">
-                     <font>
-                        <Font name="Poppins Medium" size="14.0" />
-                     </font>
-                  </Label>
-                  <Label contentDisplay="CENTER" prefHeight="50.0" prefWidth="250.0" style="-fx-border-width: 0.1;" text="Linearity" textAlignment="CENTER" textFill="#90a4ae" wrapText="true">
-                     <font>
-                        <Font name="Poppins Medium" size="14.0" />
-                     </font>
-                  </Label>
-                  <Label contentDisplay="CENTER" prefHeight="50.0" prefWidth="250.0" style="-fx-border-width: 0.1;" text="Impurities analysis" textAlignment="CENTER" textFill="#90a4ae" wrapText="true">
-                     <font>
-                        <Font name="Poppins Medium" size="14.0" />
-                     </font>
-                  </Label>
-               </children>
-            </VBox>
          </children>
       </AnchorPane>
    </children>

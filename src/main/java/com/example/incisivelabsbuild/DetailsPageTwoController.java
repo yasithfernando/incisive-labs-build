@@ -106,6 +106,23 @@ public class DetailsPageTwoController {
             stage.show();
         }
     }
+    public Boolean numberValidation(String str){
+        try {
+            Double.parseDouble(str);
+//            is a number
+            if (Double.parseDouble(str) <= 0){
+                JOptionPane.showMessageDialog(buttonPanel, "Number Cannot be negative or null for " + str);
+
+            }
+            return true;
+        } catch(NumberFormatException e){
+//            get the name of the field
+            JOptionPane.showMessageDialog(buttonPanel, "Please enter a valid number for " + str);
+            return false;
+        }
+//        pass the input inside
+    }
+
 
     public void tssfFieldsUpdate() {
         details.tssfEstimatedConcentrationOfTestSample_text = Double.valueOf(tssfEstimatedConcentrationOfTestSampleTxt.getText());

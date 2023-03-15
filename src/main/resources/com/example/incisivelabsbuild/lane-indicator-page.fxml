@@ -13,7 +13,6 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1178.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.incisivelabsbuild.LaneIndicatorPageController">
    <children>
       <AnchorPane prefHeight="700.0" prefWidth="1178.0" style="-fx-background-color: #0d47a1;">
@@ -21,7 +20,7 @@
             <Pane layoutX="326.0" layoutY="95.0" prefHeight="538.0" prefWidth="812.0" style="-fx-background-color: #0d47a1 #0d47a1;">
                <children>
                   <ImageView fx:id="gelImageViewer" fitHeight="361.0" fitWidth="520.0" layoutX="146.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true" />
-                  <Button fx:id="addGelImageButton" layoutX="337.0" layoutY="38.0" mnemonicParsing="false" onAction="#onAddGelImageButtonClick" prefHeight="40.0" prefWidth="187.0" style="-fx-background-color: #0091FF;" text="ADD GEL IMAGE" textFill="WHITE">
+                  <Button fx:id="addGelImageButton" layoutX="337.0" layoutY="38.0" mnemonicParsing="false" onAction="#onAddGelImageButtonClick" prefHeight="40.0" prefWidth="187.0" style="-fx-background-color: ffffff;" text="ADD GEL IMAGE">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>

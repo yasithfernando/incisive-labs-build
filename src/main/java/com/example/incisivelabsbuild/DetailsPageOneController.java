@@ -51,11 +51,11 @@ public class DetailsPageOneController {
             JOptionPane.showMessageDialog(buttonPanel,"Invalid input for Title Text \n" + title_text);
         } else if (inputValidater(details.batch_number_text, "[a-zA-Z0-9 ]+")) {
             JOptionPane.showMessageDialog(buttonPanel,"Invalid input for Batch Number \n" + batch_number_text);
-        } else if (inputValidater(details.checkPoint_text, "[a-zA-Z ]+")) {
+        } else if (inputValidater(details.checkPoint_text, "[a-zA-Z0-9 ]+")) {
             JOptionPane.showMessageDialog(buttonPanel, "Invalid input for checkpoint text \n" + checkPoint_text);
-        } else if (inputValidater(details.analyst_text, "[a-zA-Z ]+")) {
+        } else if (inputValidater(details.analyst_text, "[a-zA-Z0-9 ]+")) {
             JOptionPane.showMessageDialog(buttonPanel,"Invalid input for analyst text \n" + analyst_text);
-        } else if (inputValidater(details.checked_text, "[a-zA-Z ]+")) {
+        } else if (inputValidater(details.checked_text, "[a-zA-Z0-9 ]+")) {
         JOptionPane.showMessageDialog(buttonPanel,"Invalid input for checked text \n" + checked_text);
         } else if (details.bovine_or_globin == null) {
             JOptionPane.showMessageDialog(buttonPanel, "Select either for Bovine haemoglobin or BlueCheck ");

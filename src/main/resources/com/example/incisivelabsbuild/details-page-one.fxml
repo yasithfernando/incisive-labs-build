@@ -23,11 +23,6 @@
       <children>
          <AnchorPane prefHeight="730.0" prefWidth="830.0" style="-fx-background-color: #0d47a1;">
             <Pane layoutX="261.0" layoutY="96.0" prefHeight="538.0" prefWidth="919.0" style="-fx-border-width: 1px; -fx-background-color: #0d47a1; -fx-border-radius: 11;">
-               <Label layoutX="61.0" layoutY="59.0" prefHeight="23.0" prefWidth="68.0" text="Title" textFill="WHITE">
-                  <font>
-                     <Font name="Poppins Medium" size="15.0" />
-                  </font>
-               </Label>
                <TextField fx:id="txtTitle" layoutX="61.0" layoutY="81.0" prefHeight="40.0" prefWidth="390.0" style="-fx-border-radius: 0px;">
                   <font>
                      <Font name="Poppins Medium" size="13.0" />
@@ -96,6 +91,11 @@
                      </FXCollections>
                   </items>
                </ComboBox>
+               <Label layoutX="61.0" layoutY="59.0" prefHeight="23.0" prefWidth="390.0" text="Title" textFill="WHITE">
+                  <font>
+                     <Font name="Poppins Medium" size="15.0" />
+                  </font>
+               </Label>
             </Pane>
             <Button fx:id="nextBtn" layoutX="1041.0" layoutY="657.0" mnemonicParsing="false" onAction="#onNextButtonClick" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: #0091FF;" text="NEXT" textFill="WHITE">
                <cursor>

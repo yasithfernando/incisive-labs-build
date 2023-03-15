@@ -170,7 +170,8 @@
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cdd4da" height="55.0" layoutY="111.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="8.0" />
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cdd4da" height="55.0" layoutY="166.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="8.0" />
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cdd4da" height="55.0" layoutY="221.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="8.0" />
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="55.0" layoutY="275.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="8.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="55.0" layoutY="330.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="8.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cdd4da" height="55.0" layoutY="276.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="8.0" />
                </children>
             </AnchorPane>
             <VBox alignment="CENTER_LEFT" layoutX="71.0" prefHeight="700.0" prefWidth="192.0" spacing="8.0" style="-fx-background-color: white;">

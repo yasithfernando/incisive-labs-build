@@ -47,7 +47,7 @@
                   </columns>
               </TableView>
       
-              <Button fx:id="addRowButton" layoutX="710.0" layoutY="125.0" onAction="#addRow" prefHeight="39.0" prefWidth="125.0" style="-fx-background-color: #7ae246;" text="Add Lane" textFill="WHITE">
+              <Button fx:id="addRowButton" layoutX="710.0" layoutY="125.0" onAction="#addRow" prefHeight="39.0" prefWidth="132.0" style="-fx-background-color: #7ae246;" text="Add Lane" textFill="WHITE">
                <font>
                   <Font name="Poppins Medium" size="18.0" />
                </font></Button>
@@ -83,7 +83,7 @@
                <font>
                   <Font name="Poppins Medium" size="18.0" />
                </font></Label>
-            <DatePicker fx:id="dateGelRun" layoutX="605.0" layoutY="43.0" prefHeight="39.0" prefWidth="200.0" />
+            <DatePicker fx:id="dateGelRun" layoutX="605.0" layoutY="43.0" prefHeight="39.0" prefWidth="200.0" showWeekNumbers="true" />
             <TextField fx:id="gelLetterText" layoutX="605.0" layoutY="8.0" prefHeight="27.0" prefWidth="200.0">
                <font>
                   <Font name="Poppins Medium" size="18.0" />

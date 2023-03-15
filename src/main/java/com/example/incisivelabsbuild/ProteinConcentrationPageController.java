@@ -156,6 +156,10 @@ public class ProteinConcentrationPageController {
     }
 
     private void mapNormalisedTableToProteinConcentration() throws NullPointerException, ArrayIndexOutOfBoundsException {
+        System.out.println("at map method");
+        System.out.println(MassCorrectionPageController.finalNormalisedToDilutionTable.getItems().get(0).getMonomer());
+        System.out.println("get monomer passed");
+
         TableView<MassCorrectionPageController.NormalisedToDilutionData> normalisedData = MassCorrectionPageController.finalNormalisedToDilutionTable;
         //TODO map normalised data table to protein concentration table
         int numberOfRows = normalisedData.getItems().size();

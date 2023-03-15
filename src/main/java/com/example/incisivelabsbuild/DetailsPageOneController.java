@@ -39,27 +39,28 @@ public class DetailsPageOneController {
     @FXML
     public void onNextButtonClick() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(DetailsPageTwoController.class.getResource("details-page-two.fxml"));
-        details.setTitle_text(txtTitle.getText());
-        details.setBatch_number_text(batchNumberText.getText());
-        details.setCheckPoint_text(checkpointTxt.getText());
-        details.setAnalyst_text(analystTxt.getText());
-        details.setChecked_text(checkerTxt.getText());
-        details.setNotes_text(notesTxt.getText());
-        details.setBovine_or_globin((String) bovineBlueCombo.getValue());
 
-        if (inputValidater(details.title_text, "[a-zA-Z0-9 ]+")){
+        if (inputValidater(txtTitle.getText(), "[a-zA-Z0-9 ]+")){
             JOptionPane.showMessageDialog(buttonPanel,"Invalid input for Title Text \n" + title_text);
-        } else if (inputValidater(details.batch_number_text, "[a-zA-Z0-9 ]+")) {
+        } else if (inputValidater(batchNumberText.getText(), "[a-zA-Z0-9 ]+")) {
             JOptionPane.showMessageDialog(buttonPanel,"Invalid input for Batch Number \n" + batch_number_text);
-        } else if (inputValidater(details.checkPoint_text, "[a-zA-Z0-9 ]+")) {
+        } else if (inputValidater(checkpointTxt.getText(), "[a-zA-Z0-9 ]+")) {
             JOptionPane.showMessageDialog(buttonPanel, "Invalid input for checkpoint text \n" + checkPoint_text);
-        } else if (inputValidater(details.analyst_text, "[a-zA-Z0-9 ]+")) {
+        } else if (inputValidater(analystTxt.getText(), "[a-zA-Z0-9 ]+")) {
             JOptionPane.showMessageDialog(buttonPanel,"Invalid input for analyst text \n" + analyst_text);
-        } else if (inputValidater(details.checked_text, "[a-zA-Z0-9 ]+")) {
-        JOptionPane.showMessageDialog(buttonPanel,"Invalid input for checked text \n" + checked_text);
-        } else if (details.bovine_or_globin == null) {
+        } else if (inputValidater(checkerTxt.getText(), "[a-zA-Z0-9 ]+")) {
+        JOptionPane.showMessageDialog(buttonPanel,"Invalid input for checker text \n" + checked_text);
+        } else if (bovineBlueCombo.getValue() == null) {
             JOptionPane.showMessageDialog(buttonPanel, "Select either for Bovine haemoglobin or BlueCheck ");
         }else {
+            details.setTitle_text(txtTitle.getText());
+            details.setBatch_number_text(batchNumberText.getText());
+            details.setCheckPoint_text(checkpointTxt.getText());
+            details.setAnalyst_text(analystTxt.getText());
+            details.setChecked_text(checkerTxt.getText());
+            details.setNotes_text(notesTxt.getText());
+            details.setBovine_or_globin((String) bovineBlueCombo.getValue());
+
             Scene scene = new Scene(fxmlLoader.load(), 1178, 700);
             stage.setTitle("Incisive Lab");
             stage.setScene(scene);

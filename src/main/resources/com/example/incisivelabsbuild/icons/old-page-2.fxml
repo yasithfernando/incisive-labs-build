@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="646.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.incisivelabsbuild.GeneralLayoutController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="744.0" layoutX="-21.0" layoutY="-24.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-background-color: white;" width="200.0" />
+      <VBox alignment="CENTER_LEFT" layoutX="58.0" prefHeight="720.0" prefWidth="192.0" spacing="8.0" style="-fx-background-color: white;">
+         <children>
+            <Label contentDisplay="CENTER" prefHeight="50.0" prefWidth="187.0" style="-fx-padding: 10px;" text="Details" textFill="#030101">
+               <font>
+                  <Font name="Poppins Medium" size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <Label contentDisplay="CENTER" prefHeight="50.0" prefWidth="264.0" style="-fx-border-width: 0.1;" text="Formula Reference" textAlignment="CENTER" textFill="#90a4ae">
+               <font>
+                  <Font name="Poppins Medium" size="14.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="CENTER" prefHeight="50.0" prefWidth="264.0" style="-fx-border-width: 0.1;" text="Lane Contents" textAlignment="CENTER" textFill="#90a4ae">
+               <font>
+                  <Font name="Poppins Medium" size="14.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="CENTER" prefHeight="50.0" prefWidth="264.0" style="-fx-border-width: 0.1;" text="Lane Indicator" textAlignment="CENTER" textFill="#90a4ae" wrapText="true">
+               <font>
+                  <Font name="Poppins Medium" size="14.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="CENTER" prefHeight="50.0" prefWidth="264.0" style="-fx-border-width: 0.1;" text="Raw Data" textAlignment="CENTER" textFill="#90a4ae">
+               <font>
+                  <Font name="Poppins Medium" size="14.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="CENTER" prefHeight="50.0" prefWidth="264.0" style="-fx-border-width: 0.1;" text="Mass Correction &amp; Normalised To Dilution" textFill="#90a4ae" wrapText="true">
+               <font>
+                  <Font name="Poppins Medium" size="14.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="CENTER" prefHeight="50.0" prefWidth="264.0" style="-fx-border-width: 0.1;" text="Protein Concentration" textAlignment="CENTER" textFill="#90a4ae" wrapText="true">
+               <font>
+                  <Font name="Poppins Medium" size="14.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="CENTER" prefHeight="50.0" prefWidth="250.0" style="-fx-border-width: 0.1;" text="Linearity" textAlignment="CENTER" textFill="#90a4ae" wrapText="true">
+               <font>
+                  <Font name="Poppins Medium" size="14.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="CENTER" prefHeight="50.0" prefWidth="250.0" style="-fx-border-width: 0.1;" text="Impurities analysis" textAlignment="CENTER" textFill="#90a4ae" wrapText="true">
+               <font>
+                  <Font name="Poppins Medium" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Pane layoutX="250.0" prefHeight="720.0" prefWidth="832.0" style="-fx-background-color: #0d47a1;">
+         <children>
+            <Pane layoutX="9.0" layoutY="95.0" prefHeight="564.0" prefWidth="812.0" style="-fx-border-width: 1px; -fx-border-color: 0; -fx-border-radius: 11; -fx-background-color: #0d47a1;">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" layoutX="536.0" layoutY="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="225.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" layoutX="311.0" layoutY="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="225.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" layoutX="23.0" layoutY="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="288.0" />
+                  <Label layoutX="28.0" layoutY="14.0" prefHeight="32.0" prefWidth="240.0" styleClass="text" text="Test Sample Stock Formula" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Poppins Medium" size="13.0" />
+                     </font>
+                  </Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" layoutX="23.0" layoutY="49.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="288.0" />
+                  <Label layoutX="31.0" layoutY="53.0" prefHeight="45.0" prefWidth="282.0" text="Estimated concentration of Test Sample (mg/mL)" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="Poppins Medium" size="11.0" />
+                     </font>
+                  </Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cf1d39" height="40.0" layoutX="23.0" layoutY="89.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="288.0" />
+                  <Label layoutX="31.0" layoutY="89.0" prefHeight="40.0" prefWidth="282.0" text="Total volume (uL)" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="Poppins Medium" size="13.0" />
+                     </font>
+                  </Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" layoutX="23.0" layoutY="129.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="288.0" />
+                  <Label layoutX="31.0" layoutY="129.0" prefHeight="40.0" prefWidth="282.0" text="Volume of sample (uL)" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="Poppins Medium" size="13.0" />
+                     </font>
+                  </Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" layoutX="23.0" layoutY="169.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="288.0" />
+                  <Label layoutX="28.0" layoutY="169.0" prefHeight="40.0" prefWidth="282.0" text="Volume of 2X R-SOB (uL)" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="Poppins Medium" size="13.0" />
+                     </font>
+                  </Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" layoutX="23.0" layoutY="209.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="288.0" />
+                  <Label layoutX="28.0" layoutY="209.0" prefHeight="40.0" prefWidth="282.0" text="Final concentration (mg/mL)" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="Poppins Medium" size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtTitle2" layoutX="311.0" layoutY="49.0" prefHeight="40.0" prefWidth="225.0" style="-fx-background-color: white; -fx-border-color: e3e3e3;">
+                     <font>
+                        <Font name="Poppins Medium" size="13.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtTitle21" layoutX="311.0" layoutY="89.0" prefHeight="40.0" prefWidth="225.0" style="-fx-background-color: white; -fx-border-color: e3e3e3;">
+                     <font>
+                        <Font name="Poppins Medium" size="13.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtTitle22" layoutX="311.0" layoutY="129.0" prefHeight="40.0" prefWidth="225.0" style="-fx-background-color: white; -fx-border-color: e3e3e3;">
+                     <font>
+                        <Font name="Poppins Medium" size="13.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtTitle211" layoutX="311.0" layoutY="169.0" prefHeight="40.0" prefWidth="225.0" style="-fx-background-color: white; -fx-border-color: e3e3e3;">
+                     <font>
+                        <Font name="Poppins Medium" size="13.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtTitle2111" layoutX="311.0" layoutY="209.0" prefHeight="40.0" prefWidth="225.0" style="-fx-background-color: white; -fx-border-color: e3e3e3;">
+                     <font>
+                        <Font name="Poppins Medium" size="13.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtTitle23" layoutX="536.0" layoutY="49.0" prefHeight="40.0" prefWidth="225.0" style="-fx-background-color: white; -fx-border-color: e3e3e3;">
+                     <font>
+                        <Font name="Poppins Medium" size="13.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtTitle212" layoutX="536.0" layoutY="89.0" prefHeight="40.0" prefWidth="225.0" style="-fx-background-color: white; -fx-border-color: e3e3e3;">
+                     <font>
+                        <Font name="Poppins Medium" size="13.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtTitle221" layoutX="536.0" layoutY="129.0" prefHeight="40.0" prefWidth="225.0" style="-fx-background-color: white; -fx-border-color: e3e3e3;">
+                     <font>
+                        <Font name="Poppins Medium" size="13.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtTitle2112" layoutX="536.0" layoutY="169.0" prefHeight="40.0" prefWidth="225.0" style="-fx-background-color: white; -fx-border-color: e3e3e3;">
+                     <font>
+                        <Font name="Poppins Medium" size="13.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtTitle21111" layoutX="536.0" layoutY="209.0" prefHeight="40.0" prefWidth="225.0" style="-fx-background-color: white; -fx-border-color: e3e3e3;">
+                     <font>
+                        <Font name="Poppins Medium" size="13.0" />
+                     </font>
+                  </TextField>
+                  <Label alignment="CENTER" layoutX="536.0" layoutY="8.0" prefHeight="45.0" prefWidth="225.0" text="Reference Standard Stock Formula" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="Poppins Medium" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="311.0" layoutY="8.0" prefHeight="45.0" prefWidth="225.0" text="Test Sample Stock Formula" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="Poppins Medium" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="243.0" layoutY="308.0" prefHeight="32.0" prefWidth="240.0" styleClass="text" text="Dilution table" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Poppins Medium" size="16.0" />
+                     </font>
+                  </Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" layoutX="309.0" layoutY="379.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" layoutX="23.0" layoutY="417.0" stroke="BLACK" strokeType="INSIDE" width="288.0" />
+                  <Label layoutX="31.0" layoutY="424.0" text="Test sample ">
+                     <font>
+                        <Font name="Poppins Medium" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="321.0" layoutY="391.0" text="Volume of sample (uL)">
+                     <font>
+                        <Font name="Poppins Medium" size="13.0" />
+                     </font>
+                  </Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" layoutX="508.0" layoutY="379.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="309.0" layoutY="417.0" stroke="#837575" strokeType="INSIDE" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="508.0" layoutY="417.0" stroke="#837575" strokeType="INSIDE" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" layoutX="23.0" layoutY="456.0" stroke="BLACK" strokeType="INSIDE" width="288.0" />
+                  <Label layoutX="31.0" layoutY="462.0" text="Reference Standard">
+                     <font>
+                        <Font name="Poppins Medium" size="13.0" />
+                     </font>
+                  </Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="309.0" layoutY="456.0" stroke="#837575" strokeType="INSIDE" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="508.0" layoutY="456.0" stroke="#837575" strokeType="INSIDE" width="200.0" />
+                  <Label layoutX="520.0" layoutY="391.0" text="Volume of sample (uL)">
+                     <font>
+                        <Font name="Poppins Medium" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button fx:id="resetBtn" layoutX="542.0" layoutY="663.0" mnemonicParsing="false" onAction="#onResetButtonClick" prefHeight="39.0" prefWidth="125.0" style="-fx-background-color: ffd600;" text="Back">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Poppins Medium" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="nextBtn" layoutX="687.0" layoutY="663.0" mnemonicParsing="false" onAction="#onNextButtonClick" prefHeight="39.0" prefWidth="125.0" style="-fx-background-color: ffd600;" text="Next">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Poppins Medium" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="resetBtn1" layoutX="396.0" layoutY="663.0" mnemonicParsing="false" onAction="#onResetButtonClick" prefHeight="39.0" prefWidth="125.0" style="-fx-background-color: ff1744;" text="Reset" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Poppins Medium" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="14.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@settings-icon.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="55.0" layoutX="-3.0" layoutY="101.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="8.0" />
+      <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="14.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@microscope-icon.png" />
+         </image>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="14.0" layoutY="344.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@saveas-icon.png" />
+         </image>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="14.0" layoutY="520.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@chart-icon.png" />
+         </image>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="14.0" layoutY="457.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@dna-icon.png" />
+         </image>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="14.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@magnifyglass-icon.png" />
+         </image>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="14.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@testtube-icon.png" />
+         </image>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="14.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@2testtube-icon.png" />
+         </image>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="14.0" layoutY="573.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@germ-icon.png" />
+         </image>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>

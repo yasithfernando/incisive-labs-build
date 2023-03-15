@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="700.0" prefWidth="1178.0" style="-fx-background-color: #0d47a1;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.incisivelabsbuild.MassCorrectionPageController">
+   <children>
+      <TableView fx:id="massCorrectionTable" layoutX="298.0" layoutY="61.0" prefHeight="258.0" prefWidth="844.0">
+         <columns>
+            <TableColumn prefWidth="100.0" text="Sample">
+               <cellValueFactory>
+                  <PropertyValueFactory property="sampleName" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="150.0" text="Monomer 14 kDa">
+               <cellValueFactory>
+                  <PropertyValueFactory property="monomer" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="150.0" text="Dimer 28 kDa">
+               <cellValueFactory>
+                  <PropertyValueFactory property="dimer" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="150.0" text="Trimer 42 kDa">
+               <cellValueFactory>
+                  <PropertyValueFactory property="trimer" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="150.0" text="Tretramer 56 kDa">
+               <cellValueFactory>
+                  <PropertyValueFactory property="tretramer" />
+               </cellValueFactory>
+            </TableColumn>
+             <TableColumn prefWidth="150.0" text="Total Protein">
+                 <cellValueFactory>
+                     <PropertyValueFactory property="totalProtein" />
+                 </cellValueFactory>
+             </TableColumn>
+         </columns>
+      </TableView>
+      <Button fx:id="nextBtn" layoutX="1027.0" layoutY="650.0" mnemonicParsing="false" onAction="#onNextButtonClick" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: #0091FF;" text="NEXT" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Poppins Medium" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="backBtn" layoutX="888.0" layoutY="650.0" mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: #0091FF;" text="BACK" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Poppins Medium" size="18.0" />
+         </font>
+      </Button>
+      <TableView fx:id="normalisedToDilutionTable" layoutX="300.0" layoutY="381.0" prefHeight="258.0" prefWidth="852.0">
+         <columns>
+            <TableColumn prefWidth="100.0" text="Sample">
+               <cellValueFactory>
+                  <PropertyValueFactory property="sampleName" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="150.0" text="Monomer 14 kDa">
+               <cellValueFactory>
+                  <PropertyValueFactory property="monomer" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="150.0" text="Dimer 28 kDa">
+               <cellValueFactory>
+                  <PropertyValueFactory property="dimer" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="150.0" text="Trimer 42 kDa">
+               <cellValueFactory>
+                  <PropertyValueFactory property="trimer" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="150.0" text="Tretramer 56 kDa">
+               <cellValueFactory>
+                  <PropertyValueFactory property="tretramer" />
+               </cellValueFactory>
+            </TableColumn>
+             <TableColumn prefWidth="150.0" text="Total">
+                 <cellValueFactory>
+                     <PropertyValueFactory property="total" />
+                 </cellValueFactory>
+             </TableColumn>
+         </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="298.0" layoutY="20.0" prefHeight="41.0" prefWidth="251.0" style="-fx-background-color: #0091fa;" text="Mass Correction" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Poppins Medium" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="300.0" layoutY="340.0" prefHeight="41.0" prefWidth="251.0" style="-fx-background-color: #0091fa;" text="Normalised To Dilution" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Poppins Medium" size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane prefHeight="676.0" prefWidth="263.0">
+         <children>
+            <AnchorPane layoutY="-14.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="755.0" layoutY="13.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-background-color: white;" width="263.0" />
+                  <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="27.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/settings-icon.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="27.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/microscope-icon.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust />
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="27.0" layoutY="354.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/saveas-icon.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust />
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="27.0" layoutY="530.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/chart-icon.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust />
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="27.0" layoutY="467.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/dna-icon.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust />
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="27.0" layoutY="410.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/magnifyglass-icon.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust />
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="27.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/testtube-icon.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust />
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="27.0" layoutY="294.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/2testtube-icon.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust />
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="27.0" layoutY="583.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/germ-icon.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust />
+                     </effect>
+                  </ImageView>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cdd4da" height="55.0" layoutY="111.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="8.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cdd4da" height="55.0" layoutY="166.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="8.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cdd4da" height="55.0" layoutY="221.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="8.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="55.0" layoutY="275.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="8.0" />
+               </children>
+            </AnchorPane>
+            <VBox alignment="CENTER_LEFT" layoutX="71.0" prefHeight="700.0" prefWidth="192.0" spacing="8.0" style="-fx-background-color: white;">
+               <children>
+                  <Label contentDisplay="CENTER" prefHeight="50.0" prefWidth="223.0" style="-fx-padding: 10px;" text="Details" textFill="#030101">
+                     <font>
+                        <Font name="Poppins Medium" size="18.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <Label contentDisplay="CENTER" prefHeight="50.0" prefWidth="264.0" style="-fx-border-width: 0.1;" text="Formula Reference" textAlignment="CENTER" textFill="#90a4ae">
+                     <font>
+                        <Font name="Poppins Medium" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label contentDisplay="CENTER" prefHeight="50.0" prefWidth="264.0" style="-fx-border-width: 0.1;" text="Lane Contents" textAlignment="CENTER" textFill="#90a4ae">
+                     <font>
+                        <Font name="Poppins Medium" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label contentDisplay="CENTER" prefHeight="50.0" prefWidth="264.0" style="-fx-border-width: 0.1;" text="Lane Indicator" textAlignment="CENTER" textFill="#90a4ae" wrapText="true">
+                     <font>
+                        <Font name="Poppins Medium" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label contentDisplay="CENTER" prefHeight="50.0" prefWidth="264.0" style="-fx-border-width: 0.1;" text="Raw Data" textAlignment="CENTER" textFill="#90a4ae">
+                     <font>
+                        <Font name="Poppins Medium" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label contentDisplay="CENTER" prefHeight="50.0" prefWidth="264.0" style="-fx-border-width: 0.1;" text="Mass Correction &amp; Normalised To Dilution" textFill="#90a4ae" wrapText="true">
+                     <font>
+                        <Font name="Poppins Medium" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label contentDisplay="CENTER" prefHeight="50.0" prefWidth="264.0" style="-fx-border-width: 0.1;" text="Protein Concentration" textAlignment="CENTER" textFill="#90a4ae" wrapText="true">
+                     <font>
+                        <Font name="Poppins Medium" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label contentDisplay="CENTER" prefHeight="50.0" prefWidth="250.0" style="-fx-border-width: 0.1;" text="Linearity" textAlignment="CENTER" textFill="#90a4ae" wrapText="true">
+                     <font>
+                        <Font name="Poppins Medium" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label contentDisplay="CENTER" prefHeight="50.0" prefWidth="250.0" style="-fx-border-width: 0.1;" text="Impurities analysis" textAlignment="CENTER" textFill="#90a4ae" wrapText="true">
+                     <font>
+                        <Font name="Poppins Medium" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

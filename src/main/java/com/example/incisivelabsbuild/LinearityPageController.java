@@ -188,7 +188,14 @@ public class LinearityPageController {
         }
     }
 
-    public void onBackButtonClick(ActionEvent actionEvent) {
+    public void onBackButtonClick(ActionEvent actionEvent) throws IOException {
+        HelloApplication.backNavigation = true;
+
+        FXMLLoader fxmlLoader = new FXMLLoader(DetailsPageOneController.class.getResource("protein-concentration-page.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 1178, 700);
+        stage.setTitle("Incisive Lab");
+        stage.setScene(scene);
+        stage.show();
 
     }
 

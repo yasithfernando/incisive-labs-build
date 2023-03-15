@@ -18,8 +18,7 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.example.incisivelabsbuild.HelloApplication.details;
-import static com.example.incisivelabsbuild.HelloApplication.stage;
+import static com.example.incisivelabsbuild.HelloApplication.*;
 import static logics.mathFunctions.addTrendLine;
 
 public class LinearityPageController {
@@ -159,6 +158,7 @@ public class LinearityPageController {
 
     public void onNextButtonClick(ActionEvent actionEvent) throws IOException {
 
+
         //Add Linearity data to gel run
         details.getGelRunArrayList().get(LaneContentsPageController.currentIterativeRunTime).setBandIntensityDataTableView(bandIntensityTable);
 
@@ -166,16 +166,26 @@ public class LinearityPageController {
 
         //Increment iterative run time (gel run)
         LaneContentsPageController.currentIterativeRunTime++;
-        //TODO Navigate to lane content page
+        System.out.println("Current Run Time Number: " + LaneContentsPageController.currentIterativeRunTime);
+        System.out.println("Gel Run Number: " + details.getNumberOfGelRuns());
 
+        if (LaneContentsPageController.currentIterativeRunTime == details.getNumberOfGelRuns()){
+            for (GelRun gelRun : details.getGelRunArrayList()) {System.out.println(gelRun.toString());;}
 
-
-        //Dummy navigation to final screen
-        FXMLLoader fxmlLoader = new FXMLLoader(DetailsPageTwoController.class.getResource("final-screen.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 1178, 700);
-        stage.setTitle("Incisive Lab");
-        stage.setScene(scene);
-        stage.show();
+            FXMLLoader fxmlLoader = new FXMLLoader(DetailsPageTwoController.class.getResource("final-screen.fxml"));
+            Scene scene = new Scene(fxmlLoader.load(), 1178, 700);
+            stage.setTitle("Incisive Lab");
+            stage.setScene(scene);
+            stage.show();
+        }
+        else {
+            //TODO Navigate to lane content page
+            FXMLLoader fxmlLoader = new FXMLLoader(DetailsPageTwoController.class.getResource("lane-contents-page.fxml"));
+            Scene scene = new Scene(fxmlLoader.load(), 1178, 700);
+            stage.setTitle("Incisive Lab");
+            stage.setScene(scene);
+            stage.show();
+        }
     }
 
     public void onBackButtonClick(ActionEvent actionEvent) {

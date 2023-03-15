@@ -237,4 +237,35 @@ public class GelRun {
     public void setBandIntensityDataTableView(TableView<LinearityPageController.BandIntensityData> bandIntensityDataTableView) {
         this.bandIntensityDataTableView = bandIntensityDataTableView;
     }
+
+    @Override
+    public String toString() {
+        return "GelRun{" +
+                "gelNumber='" + gelNumber + '\'' +
+                ", gelRunDate=" + gelRunDate +
+                ", laneContentTableView=" + laneContentTableView +
+                ", rawDataTableView=" + rawDataTableView +
+                ", gelImage=" + gelImage +
+                ", massCorrectionDataTableView=" + massCorrectionDataTableView +
+                ", normalisedToDilutionDataTableView=" + normalisedToDilutionDataTableView +
+                ", proteinConcentrationDataTableView=" + proteinConcentrationDataTableView +
+                ", testSampleMean=" + testSampleMean +
+                ", testSampleStandardDeviation=" + testSampleStandardDeviation +
+                ", testSamplePercentage=" + testSamplePercentage +
+                ", testSampleMgMlStock=" + testSampleMgMlStock +
+                ", testSampleSDII=" + testSampleSDII +
+                ", testSampleMgMlOriginalSample=" + testSampleMgMlOriginalSample +
+                ", testSampleSDIII=" + testSampleSDIII +
+                ", testSampleRSD=" + testSampleRSD +
+                ", referenceSampleMean=" + referenceSampleMean +
+                ", referenceSampleStandardDeviation=" + referenceSampleStandardDeviation +
+                ", referenceSamplePercentage=" + referenceSamplePercentage +
+                ", referenceSampleMgMlStock=" + referenceSampleMgMlStock +
+                ", referenceSampleSDII=" + referenceSampleSDII +
+                ", referenceSampleMgMlOriginalSample=" + referenceSampleMgMlOriginalSample +
+                ", referenceSampleSDIII=" + referenceSampleSDIII +
+                ", referenceSampleRSD=" + referenceSampleRSD +
+                ", bandIntensityDataTableView=" + bandIntensityDataTableView +
+                '}';
+    }
 }

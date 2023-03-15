@@ -69,6 +69,21 @@ public class mathFunctions {
         return standardDeviation;
     }
 
+    public static BigDecimal calculateStandardDeviationSampleBigDecimal(BigDecimal[] data) {
+        // Calculate the mean
+        BigDecimal mean = calculateMeanBigDecimal(data);
+
+        // Calculate the standard deviation
+        BigDecimal sumOfSquaredDiffs = Arrays.stream(data)
+                .map(x -> x.subtract(mean).pow(2))
+                .reduce(BigDecimal.ZERO, BigDecimal::add);
+        BigDecimal variance = sumOfSquaredDiffs.divide(BigDecimal.valueOf(data.length), MathContext.DECIMAL32);
+        BigDecimal standardDeviation = BigDecimal.valueOf(Math.sqrt(variance.doubleValue()));
+        //New
+
+        return standardDeviation;
+    }
+
     public static XYChart.Series<Double,BigDecimal> addTrendLine(XYChart.Series<Double, BigDecimal> series) {
         // Get the data points in the series
         ObservableList<XYChart.Data<Double, BigDecimal>> data = series.getData();

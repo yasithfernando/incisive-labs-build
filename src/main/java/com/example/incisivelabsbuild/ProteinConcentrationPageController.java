@@ -277,7 +277,14 @@ public class ProteinConcentrationPageController {
         stage.show();
     }
 
-    public void onBackButtonClick(ActionEvent actionEvent) {
+    public void onBackButtonClick(ActionEvent actionEvent)  throws IOException{
+        FXMLLoader fxmlLoader = new FXMLLoader(DetailsPageTwoController.class.getResource("MassCorrectionPageController"));
+
+        //Set the stage with the new scene
+        Scene scene = new Scene(fxmlLoader.load(), 1178, 700);
+        stage.setTitle("Incisive Lab");
+        stage.setScene(scene);
+        stage.show();
 
     }
 

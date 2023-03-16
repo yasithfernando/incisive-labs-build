@@ -18,7 +18,7 @@
    <children>
       <Pane layoutX="144.0" layoutY="60.0" prefHeight="589.0" prefWidth="935.0">
          <children>
-            <Button fx:id="resetBtn" layoutX="626.0" layoutY="543.0" mnemonicParsing="false" onAction="#onResetButtonClick" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: ff1744;" text="Exit" textFill="WHITE">
+            <Button fx:id="resetBtn" layoutX="626.0" layoutY="543.0" mnemonicParsing="false" onAction="#onResetButtonClick" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: ff1744; -fx-background-radius: 20px;" text="Exit" textFill="WHITE">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -26,7 +26,7 @@
                   <Font name="Poppins Medium" size="18.0" />
                </font>
             </Button>
-            <Button fx:id="nextBtn" layoutX="760.0" layoutY="543.0" mnemonicParsing="false" onAction="#onNextButtonClick" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: #0091FF;" text="NEXT" textFill="WHITE">
+            <Button fx:id="nextBtn" layoutX="760.0" layoutY="543.0" mnemonicParsing="false" onAction="#onNextButtonClick" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: #0091FF; -fx-background-radius: 20px;" text="NEXT" textFill="WHITE">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -34,7 +34,7 @@
                   <Font name="Poppins Medium" size="18.0" />
                </font>
             </Button>
-            <Label alignment="CENTER" layoutX="61.0" layoutY="24.0" prefHeight="41.0" prefWidth="338.0" text="Total Protein In Each Dilution" textAlignment="CENTER">
+            <Label alignment="CENTER" layoutX="23.0" layoutY="24.0" prefHeight="41.0" prefWidth="338.0" text="Total Protein In Each Dilution" textAlignment="CENTER">
                <font>
                   <Font name="Poppins Medium" size="18.0" />
                </font>
@@ -42,7 +42,7 @@
             <Pane layoutY="65.0" prefWidth="831.0">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0096fa" height="42.0" layoutX="61.0" stroke="#a3a3a3" strokeType="OUTSIDE" strokeWidth="0.0" width="813.0" />
-                  <Label layoutX="102.0" layoutY="13.0" text="Test Sample Stock Formula" textAlignment="CENTER" textFill="WHITE">
+                  <Label contentDisplay="CENTER" layoutX="292.0" layoutY="11.0" text="Test Sample Stock Formula" textAlignment="JUSTIFY" textFill="WHITE">
                      <font>
                         <Font name="Poppins Medium" size="18.0" />
                      </font></Label>
@@ -56,13 +56,13 @@
                   <TextArea layoutX="411.0" layoutY="41.0" prefHeight="92.0" prefWidth="462.0" />
                </children>
             </Pane>
-            <Label alignment="CENTER" layoutX="64.0" layoutY="232.0" prefHeight="41.0" prefWidth="338.0" style="-fx-background-color: #0091fa;" text=" Protein Concentration Final Results" textAlignment="CENTER" textFill="WHITE">
+            <Label alignment="CENTER" layoutX="65.0" layoutY="234.0" prefHeight="41.0" prefWidth="807.0" style="-fx-background-color: #0091fa;" text=" Protein Concentration Final Results" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Poppins Medium" size="18.0" />
                </font>
             </Label>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="66.0" layoutY="274.0" stroke="#a3a3a3" strokeType="OUTSIDE" width="335.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="66.0" layoutY="316.0" stroke="#a3a3a3" strokeType="OUTSIDE" width="335.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="42.0" layoutX="65.0" layoutY="276.0" stroke="#a3a3a3" strokeType="OUTSIDE" width="344.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="42.0" layoutX="63.0" layoutY="312.0" stroke="#a3a3a3" strokeType="OUTSIDE" width="346.0" />
             <Label layoutX="82.0" layoutY="276.0" prefHeight="40.0" prefWidth="216.0" text="Mean (mg/mL)" textAlignment="CENTER" wrapText="true">
                <font>
                   <Font name="Poppins Medium" size="13.0" />
@@ -71,9 +71,9 @@
                <font>
                   <Font name="Poppins Medium" size="13.0" />
                </font></Label>
-            <TextField layoutX="402.0" layoutY="275.0" prefHeight="40.0" prefWidth="462.0" />
-            <TextField layoutX="402.0" layoutY="315.0" prefHeight="40.0" prefWidth="462.0" />
-            <Button fx:id="resetBtn1" layoutX="437.0" layoutY="543.0" mnemonicParsing="false" onAction="#pdfGeneration" prefHeight="40.0" prefWidth="173.0" style="-fx-background-color: ff1744;" text="Generate PDF" textFill="WHITE">
+            <TextField layoutX="410.0" layoutY="275.0" prefHeight="40.0" prefWidth="462.0" />
+            <TextField layoutX="410.0" layoutY="315.0" prefHeight="40.0" prefWidth="462.0" />
+            <Button fx:id="resetBtn1" layoutX="437.0" layoutY="543.0" mnemonicParsing="false" onAction="#pdfGeneration" prefHeight="40.0" prefWidth="173.0" style="-fx-background-color: ff1744; -fx-background-radius: 20px;" text="Generate PDF" textFill="WHITE">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>

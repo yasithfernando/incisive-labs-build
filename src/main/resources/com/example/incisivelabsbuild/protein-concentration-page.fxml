@@ -19,7 +19,7 @@
    <children>
       <Pane layoutX="61.0" layoutY="17.0" prefHeight="669.0" prefWidth="1110.0">
          <children>
-            <TableView fx:id="proteinConcentrationTable" layoutX="152.0" layoutY="79.0" prefHeight="181.0" prefWidth="793.0">
+            <TableView fx:id="proteinConcentrationTable" layoutX="148.0" layoutY="83.0" prefHeight="181.0" prefWidth="802.0">
                <columns>
                   <TableColumn prefWidth="100.0" text="ug">
                      <cellValueFactory>
@@ -48,7 +48,7 @@
                   </TableColumn>
                </columns>
             </TableView>
-            <Button fx:id="nextBtn" layoutX="967.0" layoutY="626.0" mnemonicParsing="false" onAction="#onNextButtonClick" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: #0091FF;" text="NEXT" textFill="WHITE">
+            <Button fx:id="nextBtn" layoutX="967.0" layoutY="626.0" mnemonicParsing="false" onAction="#onNextButtonClick" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: #0091FF; -fx-background-radius: 20;" text="NEXT" textFill="WHITE">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -56,7 +56,7 @@
                   <Font name="Poppins Medium" size="18.0" />
                </font>
             </Button>
-            <Button fx:id="backBtn" layoutX="833.0" layoutY="627.0" mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: #0091FF;" text="BACK" textFill="WHITE">
+            <Button fx:id="backBtn" layoutX="833.0" layoutY="627.0" mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: #0091FF; -fx-background-radius: 20;" text="BACK" textFill="WHITE">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -64,79 +64,79 @@
                   <Font name="Poppins Medium" size="18.0" />
                </font>
             </Button>
-            <Label alignment="CENTER" layoutX="152.0" layoutY="38.0" prefHeight="41.0" prefWidth="249.0" style="-fx-background-color: #0091fa;" text="Total Protein In Each Dilution" textAlignment="CENTER" textFill="WHITE">
+            <Label alignment="CENTER" layoutX="148.0" layoutY="42.0" prefHeight="41.0" prefWidth="802.0" style="-fx-background-color: #0091fa;" text="Total Protein In Each Dilution" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
             </Label>
             <Pane layoutX="114.0" layoutY="279.0">
                <children>
-                  <Label alignment="CENTER" prefHeight="41.0" prefWidth="249.0" style="-fx-background-color: #0091fa;" text="Test Sample Derived Data" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                  <Label alignment="CENTER" layoutX="69.0" prefHeight="41.0" prefWidth="249.0" style="-fx-background-color: #0091fa;" text="Test Sample Derived Data" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                      <font>
                         <Font name="Poppins Medium" size="11.0" />
                      </font>
                   </Label>
-                  <Label alignment="CENTER" layoutY="41.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: eed202;" text="Mean" textFill="WHITE" wrapText="true">
+                  <Label alignment="CENTER" layoutX="69.0" layoutY="41.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: eed202;" text="Mean" textFill="WHITE" wrapText="true">
                      <font>
                         <Font name="Poppins Medium" size="11.0" />
                      </font></Label>
-                  <Label alignment="CENTER" layoutY="73.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: eed202;" text="SD" textFill="WHITE" wrapText="true">
+                  <Label alignment="CENTER" layoutX="69.0" layoutY="73.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: eed202;" text="SD" textFill="WHITE" wrapText="true">
                      <font>
                         <Font name="Poppins Medium" size="11.0" />
                      </font></Label>
-                  <Label alignment="CENTER" layoutY="105.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: eed202;" text="Percent" textFill="WHITE" wrapText="true">
+                  <Label alignment="CENTER" layoutX="69.0" layoutY="105.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: eed202;" text="Percent" textFill="WHITE" wrapText="true">
                      <font>
                         <Font name="Poppins Medium" size="11.0" />
                      </font></Label>
-                  <Label alignment="CENTER" layoutY="137.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: eed202;" text="mg/mL Stock" textFill="WHITE" wrapText="true">
+                  <Label alignment="CENTER" layoutX="69.0" layoutY="137.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: eed202;" text="mg/mL Stock" textFill="WHITE" wrapText="true">
                      <font>
                         <Font name="Poppins Medium" size="11.0" />
                      </font></Label>
-                  <Label alignment="CENTER" layoutY="169.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: eed202;" text="SD" textFill="WHITE" wrapText="true">
+                  <Label alignment="CENTER" layoutX="69.0" layoutY="169.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: eed202;" text="SD" textFill="WHITE" wrapText="true">
                      <font>
                         <Font name="Poppins Medium" size="11.0" />
                      </font></Label>
-                  <Label alignment="CENTER" layoutY="201.0" prefHeight="41.0" prefWidth="125.0" style="-fx-background-color: eed202;" text="mg/mL of Original Stock" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                  <Label alignment="CENTER" layoutX="69.0" layoutY="201.0" prefHeight="41.0" prefWidth="125.0" style="-fx-background-color: eed202;" text="mg/mL of Original Stock" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                      <font>
                         <Font name="Poppins Medium" size="11.0" />
                      </font></Label>
-                  <Label alignment="CENTER" layoutY="242.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: eed202;" text="SD" textFill="WHITE" wrapText="true">
+                  <Label alignment="CENTER" layoutX="69.0" layoutY="242.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: eed202;" text="SD" textFill="WHITE" wrapText="true">
                      <font>
                         <Font name="Poppins Medium" size="11.0" />
                      </font></Label>
-                  <Label alignment="CENTER" layoutY="274.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: eed202;" text="\%RSD" textFill="WHITE" wrapText="true">
+                  <Label alignment="CENTER" layoutX="69.0" layoutY="274.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: eed202;" text="\%RSD" textFill="WHITE" wrapText="true">
                      <font>
                         <Font name="Poppins Medium" size="11.0" />
                      </font></Label>
-                  <Label fx:id="tsMeanLabel" alignment="CENTER" layoutX="124.0" layoutY="41.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: f3f3f3; -fx-border-color: e3e3e3;" wrapText="true">
+                  <Label fx:id="tsMeanLabel" alignment="CENTER" layoutX="193.0" layoutY="41.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: f3f3f3; -fx-border-color: e3e3e3;" wrapText="true">
                      <font>
                         <Font name="Poppins Medium" size="11.0" />
                      </font></Label>
-                  <Label fx:id="tsSDILabel" alignment="CENTER" layoutX="124.0" layoutY="73.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: f3f3f3; -fx-border-color: e3e3e3;" wrapText="true">
+                  <Label fx:id="tsSDILabel" alignment="CENTER" layoutX="193.0" layoutY="73.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: f3f3f3; -fx-border-color: e3e3e3;" wrapText="true">
                      <font>
                         <Font name="Poppins Medium" size="11.0" />
                      </font></Label>
-                  <Label fx:id="tsPercentLabel" alignment="CENTER" layoutX="124.0" layoutY="105.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: f3f3f3; -fx-border-color: e3e3e3;" wrapText="true">
+                  <Label fx:id="tsPercentLabel" alignment="CENTER" layoutX="193.0" layoutY="105.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: f3f3f3; -fx-border-color: e3e3e3;" wrapText="true">
                      <font>
                         <Font name="Poppins Medium" size="11.0" />
                      </font></Label>
-                  <Label fx:id="tsStockLabel" alignment="CENTER" layoutX="124.0" layoutY="137.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: f3f3f3; -fx-border-color: e3e3e3;" wrapText="true">
+                  <Label fx:id="tsStockLabel" alignment="CENTER" layoutX="193.0" layoutY="137.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: f3f3f3; -fx-border-color: e3e3e3;" wrapText="true">
                      <font>
                         <Font name="Poppins Medium" size="11.0" />
                      </font></Label>
-                  <Label fx:id="tsSDIILabel" alignment="CENTER" layoutX="124.0" layoutY="169.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: f3f3f3; -fx-border-color: e3e3e3;" wrapText="true">
+                  <Label fx:id="tsSDIILabel" alignment="CENTER" layoutX="193.0" layoutY="169.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: f3f3f3; -fx-border-color: e3e3e3;" wrapText="true">
                      <font>
                         <Font name="Poppins Medium" size="11.0" />
                      </font></Label>
-                  <Label fx:id="tsOriginalStockLabel" alignment="CENTER" layoutX="124.0" layoutY="201.0" prefHeight="41.0" prefWidth="125.0" style="-fx-background-color: f3f3f3; -fx-border-color: e3e3e3;" textAlignment="CENTER" wrapText="true">
+                  <Label fx:id="tsOriginalStockLabel" alignment="CENTER" layoutX="193.0" layoutY="201.0" prefHeight="41.0" prefWidth="125.0" style="-fx-background-color: f3f3f3; -fx-border-color: e3e3e3;" textAlignment="CENTER" wrapText="true">
                      <font>
                         <Font name="Poppins Medium" size="11.0" />
                      </font></Label>
-                  <Label fx:id="tsSDIIILabel" alignment="CENTER" layoutX="124.0" layoutY="242.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: f3f3f3; -fx-border-color: e3e3e3;" wrapText="true">
+                  <Label fx:id="tsSDIIILabel" alignment="CENTER" layoutX="193.0" layoutY="242.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: f3f3f3; -fx-border-color: e3e3e3;" wrapText="true">
                      <font>
                         <Font name="Poppins Medium" size="11.0" />
                      </font></Label>
-                  <Label fx:id="tsRSDLabel" alignment="CENTER" layoutX="124.0" layoutY="274.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: f3f3f3; -fx-border-color: e3e3e3;" wrapText="true">
+                  <Label fx:id="tsRSDLabel" alignment="CENTER" layoutX="193.0" layoutY="274.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: f3f3f3; -fx-border-color: e3e3e3;" wrapText="true">
                      <font>
                         <Font name="Poppins Medium" size="11.0" />
                      </font></Label>
@@ -144,63 +144,63 @@
             </Pane>
             <Pane layoutX="558.0" layoutY="279.0">
                <children>
-                  <Label alignment="CENTER" prefHeight="41.0" prefWidth="250.0" style="-fx-background-color: #0091fa;" text="Reference Standard Derived Data" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                  <Label alignment="CENTER" layoutX="82.0" prefHeight="41.0" prefWidth="250.0" style="-fx-background-color: #0091fa;" text="Reference Standard Derived Data" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                      <font>
                         <Font name="Poppins Medium" size="11.0" />
                      </font>
                   </Label>
-                  <Label alignment="CENTER" layoutY="41.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: eed202;" text="Mean" textFill="WHITE" wrapText="true">
+                  <Label alignment="CENTER" layoutX="82.0" layoutY="41.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: eed202;" text="Mean" textFill="WHITE" wrapText="true">
                      <font>
                         <Font name="Poppins Medium" size="11.0" />
                      </font></Label>
-                  <Label alignment="CENTER" layoutY="73.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: eed202;" text="SD" textFill="WHITE" />
-                  <Label alignment="CENTER" layoutY="105.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: eed202;" text="Percent" textFill="WHITE" />
-                  <Label alignment="CENTER" layoutY="137.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: eed202;" text="mg/mL Stock" textFill="WHITE" wrapText="true">
+                  <Label alignment="CENTER" layoutX="82.0" layoutY="73.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: eed202;" text="SD" textFill="WHITE" />
+                  <Label alignment="CENTER" layoutX="82.0" layoutY="105.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: eed202;" text="Percent" textFill="WHITE" />
+                  <Label alignment="CENTER" layoutX="82.0" layoutY="137.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: eed202;" text="mg/mL Stock" textFill="WHITE" wrapText="true">
                      <font>
                         <Font name="Poppins Medium" size="11.0" />
                      </font></Label>
-                  <Label alignment="CENTER" layoutY="169.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: eed202;" text="SD" textFill="WHITE" wrapText="true">
+                  <Label alignment="CENTER" layoutX="82.0" layoutY="169.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: eed202;" text="SD" textFill="WHITE" wrapText="true">
                      <font>
                         <Font name="Poppins Medium" size="11.0" />
                      </font></Label>
-                  <Label alignment="CENTER" layoutY="201.0" prefHeight="41.0" prefWidth="125.0" style="-fx-background-color: eed202;" text="mg/mL of Original Stock" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                  <Label alignment="CENTER" layoutX="82.0" layoutY="201.0" prefHeight="41.0" prefWidth="125.0" style="-fx-background-color: eed202;" text="mg/mL of Original Stock" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                      <font>
                         <Font name="Poppins Medium" size="11.0" />
                      </font></Label>
-                  <Label alignment="CENTER" layoutY="242.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: eed202;" text="SD" textFill="WHITE" wrapText="true">
+                  <Label alignment="CENTER" layoutX="82.0" layoutY="242.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: eed202;" text="SD" textFill="WHITE" wrapText="true">
                      <font>
                         <Font name="Poppins Medium" size="11.0" />
                      </font></Label>
-                  <Label alignment="CENTER" layoutY="274.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: eed202;" text="\%RSD" textFill="WHITE" wrapText="true">
+                  <Label alignment="CENTER" layoutX="82.0" layoutY="274.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: eed202;" text="\%RSD" textFill="WHITE" wrapText="true">
                      <font>
                         <Font name="Poppins Medium" size="11.0" />
                      </font></Label>
-                  <Label fx:id="rsMeanLabel" alignment="CENTER" layoutX="124.0" layoutY="41.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: f3f3f3; -fx-border-color: e3e3e3;" />
-                  <Label fx:id="rsSDILabel" alignment="CENTER" layoutX="124.0" layoutY="73.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: f3f3f3; -fx-border-color: e3e3e3;" wrapText="true">
+                  <Label fx:id="rsMeanLabel" alignment="CENTER" layoutX="206.0" layoutY="41.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: f3f3f3; -fx-border-color: e3e3e3;" />
+                  <Label fx:id="rsSDILabel" alignment="CENTER" layoutX="206.0" layoutY="73.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: f3f3f3; -fx-border-color: e3e3e3;" wrapText="true">
                      <font>
                         <Font name="Poppins Medium" size="11.0" />
                      </font></Label>
-                  <Label fx:id="rsPercentLabel" alignment="CENTER" layoutX="124.0" layoutY="105.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: f3f3f3; -fx-border-color: e3e3e3;" wrapText="true">
+                  <Label fx:id="rsPercentLabel" alignment="CENTER" layoutX="206.0" layoutY="105.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: f3f3f3; -fx-border-color: e3e3e3;" wrapText="true">
                      <font>
                         <Font name="Poppins Medium" size="11.0" />
                      </font></Label>
-                  <Label fx:id="rsStockLabel" alignment="CENTER" layoutX="124.0" layoutY="137.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: f3f3f3; -fx-border-color: e3e3e3;" wrapText="true">
+                  <Label fx:id="rsStockLabel" alignment="CENTER" layoutX="206.0" layoutY="137.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: f3f3f3; -fx-border-color: e3e3e3;" wrapText="true">
                      <font>
                         <Font name="Poppins Medium" size="11.0" />
                      </font></Label>
-                  <Label fx:id="rsSDIILabel" alignment="CENTER" layoutX="124.0" layoutY="169.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: f3f3f3; -fx-border-color: e3e3e3;" wrapText="true">
+                  <Label fx:id="rsSDIILabel" alignment="CENTER" layoutX="206.0" layoutY="169.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: f3f3f3; -fx-border-color: e3e3e3;" wrapText="true">
                      <font>
                         <Font name="Poppins Medium" size="11.0" />
                      </font></Label>
-                  <Label fx:id="rsOriginalStockLabel" alignment="CENTER" layoutX="124.0" layoutY="201.0" prefHeight="41.0" prefWidth="125.0" style="-fx-background-color: f3f3f3; -fx-border-color: e3e3e3;" textAlignment="CENTER" wrapText="true">
+                  <Label fx:id="rsOriginalStockLabel" alignment="CENTER" layoutX="206.0" layoutY="201.0" prefHeight="41.0" prefWidth="125.0" style="-fx-background-color: f3f3f3; -fx-border-color: e3e3e3;" textAlignment="CENTER" wrapText="true">
                      <font>
                         <Font name="Poppins Medium" size="11.0" />
                      </font></Label>
-                  <Label fx:id="rsSDIIILabel" alignment="CENTER" layoutX="124.0" layoutY="242.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: f3f3f3; -fx-border-color: e3e3e3;" wrapText="true">
+                  <Label fx:id="rsSDIIILabel" alignment="CENTER" layoutX="206.0" layoutY="242.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: f3f3f3; -fx-border-color: e3e3e3;" wrapText="true">
                      <font>
                         <Font name="Poppins Medium" size="11.0" />
                      </font></Label>
-                  <Label fx:id="rsRSDLabel" alignment="CENTER" layoutX="124.0" layoutY="274.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: f3f3f3; -fx-border-color: e3e3e3;" wrapText="true">
+                  <Label fx:id="rsRSDLabel" alignment="CENTER" layoutX="206.0" layoutY="274.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: f3f3f3; -fx-border-color: e3e3e3;" wrapText="true">
                      <font>
                         <Font name="Poppins Medium" size="11.0" />
                      </font></Label>

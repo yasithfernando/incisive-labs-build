@@ -21,7 +21,7 @@
     <AnchorPane prefHeight="705.0" prefWidth="1178.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
       <Pane layoutX="151.0" layoutY="105.0" prefHeight="538.0" prefWidth="995.0">
          <children>
-              <TableView fx:id="laneContentsTable" layoutX="17.0" layoutY="163.0" prefHeight="258.0" prefWidth="697.0">
+              <TableView fx:id="laneContentsTable" layoutX="129.0" layoutY="185.0" prefHeight="258.0" prefWidth="697.0">
                   <columns>
                       <TableColumn prefWidth="97.0" text="Lane">
                           <cellValueFactory>
@@ -46,44 +46,44 @@
                   </columns>
               </TableView>
       
-              <Button fx:id="addRowButton" layoutX="710.0" layoutY="125.0" onAction="#addRow" prefHeight="39.0" prefWidth="132.0" style="-fx-background-color: #7ae246;" text="Add Lane" textFill="WHITE">
+              <Button fx:id="addRowButton" layoutX="730.0" layoutY="132.0" onAction="#addRow" prefHeight="39.0" prefWidth="132.0" style="-fx-background-color: #7ae246; -fx-background-radius: 10px;" text="Add Lane" textFill="WHITE">
                <font>
                   <Font name="Poppins Medium" size="18.0" />
                </font></Button>
-            <TextField fx:id="sampleNameTxt" layoutX="113.0" layoutY="126.0" prefHeight="39.0" prefWidth="204.0">
+            <TextField fx:id="sampleNameTxt" layoutX="90.0" layoutY="133.0" prefHeight="39.0" prefWidth="204.0" style="-fx-background-radius: 10;">
                <font>
                   <Font name="Poppins Medium" size="18.0" />
                </font></TextField>
-            <TextField fx:id="concentrationText" layoutX="315.0" layoutY="126.0" prefHeight="39.0" prefWidth="200.0">
+            <TextField fx:id="concentrationText" layoutX="305.0" layoutY="133.0" prefHeight="39.0" prefWidth="200.0" style="-fx-background-radius: 10;">
                <font>
                   <Font name="Poppins Medium" size="18.0" />
                </font></TextField>
-            <TextField fx:id="dilutionLevelText" layoutX="514.0" layoutY="126.0" prefHeight="39.0" prefWidth="200.0">
+            <TextField fx:id="dilutionLevelText" layoutX="516.0" layoutY="133.0" prefHeight="39.0" prefWidth="200.0" style="-fx-background-radius: 10;">
                <font>
                   <Font name="Poppins Medium" size="18.0" />
                </font></TextField>
-            <Label layoutX="113.0" layoutY="107.0" text="Sample name">
+            <Label layoutX="95.0" layoutY="107.0" text="Sample name">
                <font>
                   <Font name="Poppins Medium" size="14.0" />
                </font></Label>
-            <Label layoutX="316.0" layoutY="107.0" text="Concentration">
+            <Label layoutX="308.0" layoutY="107.0" text="Concentration">
                <font>
                   <Font name="Poppins Medium" size="14.0" />
                </font></Label>
-            <Label layoutX="516.0" layoutY="107.0" prefHeight="20.0" prefWidth="142.0" text="Dilution Level">
+            <Label layoutX="518.0" layoutY="107.0" prefHeight="20.0" prefWidth="142.0" text="Dilution Level">
                <font>
                   <Font name="Poppins Medium" size="14.0" />
                </font></Label>
-            <Label layoutX="386.0" layoutY="8.0" text="Gel (Letter or Number)">
+            <Label layoutX="372.0" layoutY="10.0" text="Gel (Letter or Number)">
                <font>
                   <Font name="Poppins Medium" size="18.0" />
                </font></Label>
-            <DatePicker fx:id="dateGelRun" layoutX="605.0" layoutY="43.0" prefHeight="39.0" prefWidth="200.0" showWeekNumbers="true" />
-            <TextField fx:id="gelLetterText" layoutX="605.0" layoutY="8.0" prefHeight="27.0" prefWidth="200.0">
+            <DatePicker fx:id="dateGelRun" layoutX="606.0" layoutY="53.0" prefHeight="39.0" prefWidth="200.0" showWeekNumbers="true" />
+            <TextField fx:id="gelLetterText" layoutX="605.0" layoutY="5.0" prefHeight="27.0" prefWidth="200.0" style="-fx-background-radius: 10;">
                <font>
                   <Font name="Poppins Medium" size="18.0" />
                </font></TextField>
-            <Label layoutX="386.0" layoutY="51.0" text="Date Gel Run">
+            <Label layoutX="374.0" layoutY="59.0" text="Date Gel Run">
                <font>
                   <Font name="Poppins Medium" size="18.0" />
                </font></Label>
@@ -166,7 +166,7 @@
             </VBox>
          </children>
       </AnchorPane>
-      <Button fx:id="nextBtn" layoutX="1045.0" layoutY="631.0" mnemonicParsing="false" onAction="#onNextButtonClick" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: #0091FF;" text="NEXT" textFill="WHITE">
+      <Button fx:id="nextBtn" layoutX="1045.0" layoutY="631.0" mnemonicParsing="false" onAction="#onNextButtonClick" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: #0091FF; -fx-background-radius: 20;" text="NEXT" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
@@ -174,7 +174,7 @@
             <Font size="18.0" />
          </font>
       </Button>
-      <Button fx:id="backBtn" layoutX="905.0" layoutY="631.0" mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: #0091FF;" text="BACK" textFill="WHITE">
+      <Button fx:id="backBtn" layoutX="905.0" layoutY="631.0" mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: #0091FF; -fx-background-radius: 20;" text="BACK" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
@@ -182,7 +182,7 @@
             <Font name="Poppins Medium" size="18.0" />
          </font>
       </Button>
-        <Button fx:id="removeRowButton" layoutX="685.0" layoutY="631.0" onAction="#removeRow" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #ff564a;" text="Remove Row" textFill="WHITE">
+        <Button fx:id="removeRowButton" layoutX="685.0" layoutY="631.0" onAction="#removeRow" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #ff564a; -fx-background-radius: 20;" text="Remove Row" textFill="WHITE">
          <font>
             <Font name="Poppins Medium" size="18.0" />
          </font>

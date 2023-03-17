@@ -91,30 +91,49 @@ public class LaneContentsPageController {
 
     @FXML
     public void addRow() {
-        if (sampleNameTxt.getText() != null && concentrationText.getText() != null && dilutionLevelText.getText() != null){
-            //todo check for number
-//            if (concentrationText.getText())
-            try {
+//        todo support excel copy paste type  inputs
+        String x = sampleNameTxt.getText();
+        String[] arrayx = x.split(" ");
+//        break the string into 3s and
+        if ((arrayx.length % 3) == 0) {
+            String[] temp = new String[0];
+            for (int count = 0; count < arrayx.length / 3; count++) {
+                for (int i = 0; i < 3; i++) {
+                    temp[i] = arrayx[i + 3 * count];
+                }
+//            add contents to lane
                 laneContentsTable.getItems().add(new LaneContent(
                         laneContentsTable.getItems().size() + 1,
-                        sampleNameTxt.getText(),
-                        Double.parseDouble(concentrationText.getText()),
-                        Double.parseDouble(dilutionLevelText.getText())
+                        temp[0], Double.parseDouble(temp[1]), Double.parseDouble(temp[2])
                 ));
-                sampleNameTxt.clear();
-                concentrationText.clear();
-                dilutionLevelText.clear();
-            } catch (NumberFormatException e) {
-                e.printStackTrace();
-                throw new RuntimeException(e);
             }
-        }else {
-            JOptionPane.showMessageDialog(buttonPanel, "Fill All Fields in order to add a row");
-
         }
-
+//        test
+//
+//        if (sampleNameTxt.getText() != null && concentrationText.getText() != null && dilutionLevelText.getText() != null){
+//            //todo check for number
+////            if (concentrationText.getText())
+//            try {
+//                laneContentsTable.getItems().add(new LaneContent(
+//                        laneContentsTable.getItems().size() + 1,
+//                        sampleNameTxt.getText(),
+//                        Double.parseDouble(concentrationText.getText()),
+//                        Double.parseDouble(dilutionLevelText.getText())
+//                ));        String x = sampleNameTxt.getText();
+//                sampleNameTxt.clear();
+//                concentrationText.clear();
+//                dilutionLevelText.clear();
+//            } catch (NumberFormatException e) {
+//                e.printStackTrace();
+//                throw new RuntimeException(e);
+//            }
+//        }else {
+//            JOptionPane.showMessageDialog(buttonPanel, "Fill All Fields in order to add a row");
+//
+//        }
+//
+//    }
     }
-
     @FXML
     public void removeRow() {
         // Remove the selected row from the table

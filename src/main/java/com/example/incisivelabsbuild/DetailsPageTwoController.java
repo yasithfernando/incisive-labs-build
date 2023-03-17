@@ -126,7 +126,6 @@ public class DetailsPageTwoController {
 
     public void tssfFieldsUpdate() {
         details.tssfEstimatedConcentrationOfTestSample_text = Double.valueOf(tssfEstimatedConcentrationOfTestSampleTxt.getText());
-
         if (details.tssfEstimatedConcentrationOfTestSample_text == null) {
             JOptionPane.showMessageDialog(buttonPanel, "Estimated concentration of Test Sample (mg/mL) cannot be empty ");
         } else if (details.tssfEstimatedConcentrationOfTestSample_text <= 0) {
@@ -141,23 +140,17 @@ public class DetailsPageTwoController {
     }
 
     public void rssfFieldsUpdate() {
-        //todo focus
         details.rssfConcentrationOfRefernceStndard_text = Double.valueOf(rssfConcentrationOfRefernceStndardTxt.getText());
-
-        if (rssfConcentrationOfRefernceStndardTxt.getText() == null || rssfConcentrationOfRefernceStndardTxt.getText() == "") {
+        if (rssfConcentrationOfRefernceStndardTxt.getText() == null ) {
             JOptionPane.showMessageDialog(buttonPanel, "Concentration of Reference Standard (mg/mL) cannot be empty ");
-        } else if (Integer.valueOf(rssfConcentrationOfRefernceStndardTxt.getText()) <= 0) {
+        } else if (Double.parseDouble(rssfConcentrationOfRefernceStndardTxt.getText()) <= 0) {
             JOptionPane.showMessageDialog(buttonPanel, "Concentration of Reference Standard (mg/mL) cannot be Negative ");
-        } else if (rssfConcentrationOfRefernceStndardTxt.getText() != null && Integer.valueOf(rssfConcentrationOfRefernceStndardTxt.getText()) > 0) {
+        } else if (rssfConcentrationOfRefernceStndardTxt.getText() != null && Double.valueOf(rssfConcentrationOfRefernceStndardTxt.getText()) > 0) {
             details.rssfFinalConcentration_txt = Double.parseDouble(rssfFinalConcentrationTxt.getText());
             details.rssfEstimatedConcentrationOfTestSample_txt = Double.parseDouble(rssfConcentrationOfRefernceStndardTxt.getText());
             details.rssfoutput = (1000 * details.rssfFinalConcentration_txt) / details.rssfEstimatedConcentrationOfTestSample_txt;
             rssfVolumeOfSampleLabel.setText(String.valueOf(details.rssfoutput));
             rssfVolumeOf2XRSOBLabel.setText(String.valueOf(1000 - details.rssfoutput));
-        } else if (rssfConcentrationOfRefernceStndardTxt.getText() == null) {
-            JOptionPane.showMessageDialog(buttonPanel, "Concentration of Reference Standard (mg/mL) cannot be empty ");
-        } else if (Integer.valueOf(rssfConcentrationOfRefernceStndardTxt.getText()) <= 0) {
-            JOptionPane.showMessageDialog(buttonPanel, "Concentration of Reference Standard (mg/mL) cannot be Negative ");
         }
     }
 

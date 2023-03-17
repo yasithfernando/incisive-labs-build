@@ -16,9 +16,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.incisivelabsbuild.LinearityPageController">
+<AnchorPane prefHeight="720.0" prefWidth="1170.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.incisivelabsbuild.LinearityPageController">
    <children>
-      <TableView fx:id="bandIntensityTable" layoutX="216.0" layoutY="104.0" prefHeight="127.0" prefWidth="749.0">
+      <TableView fx:id="bandIntensityTable" layoutX="265.0" layoutY="58.0" prefHeight="127.0" prefWidth="749.0">
         <columns>
            <TableColumn prefWidth="250.0" text="Protein concentration (mg/mL)">
               <cellValueFactory>
@@ -47,7 +47,7 @@
            </TableColumn>
         </columns>
       </TableView>
-      <LineChart fx:id="tsRepOneChart" alternativeColumnFillVisible="true" layoutX="102.0" layoutY="297.0" prefHeight="205.0" prefWidth="345.0">
+      <LineChart fx:id="tsRepOneChart" alternativeColumnFillVisible="true" layoutX="284.0" layoutY="198.0" prefHeight="205.0" prefWidth="345.0">
         <xAxis>
           <NumberAxis label="Protein Concentration (mg/mL)" side="BOTTOM">
                <tickLabelFont>
@@ -62,7 +62,7 @@
                </tickLabelFont></NumberAxis>
         </yAxis>
       </LineChart>
-      <LineChart fx:id="tsRepTwoChart" alternativeColumnFillVisible="true" layoutX="467.0" layoutY="305.0" prefHeight="205.0" prefWidth="345.0">
+      <LineChart fx:id="tsRepTwoChart" alternativeColumnFillVisible="true" layoutX="659.0" layoutY="197.0" prefHeight="205.0" prefWidth="345.0">
          <xAxis>
             <NumberAxis label="Protein Concentration (mg/mL)" side="BOTTOM" />
          </xAxis>
@@ -70,7 +70,7 @@
             <NumberAxis label="Band Intensity (AUC)" side="LEFT" />
          </yAxis>
       </LineChart>
-      <LineChart fx:id="tsRepThreeChart" alternativeColumnFillVisible="true" layoutX="102.0" layoutY="494.0" prefHeight="205.0" prefWidth="345.0">
+      <LineChart fx:id="tsRepThreeChart" alternativeColumnFillVisible="true" layoutX="284.0" layoutY="406.0" prefHeight="205.0" prefWidth="345.0">
          <xAxis>
             <NumberAxis label="Protein Concentration (mg/mL)" side="BOTTOM" />
          </xAxis>
@@ -78,7 +78,7 @@
             <NumberAxis label="Band Intensity (AUC)" side="LEFT" />
          </yAxis>
       </LineChart>
-      <LineChart fx:id="rsRepOneChart" alternativeColumnFillVisible="true" layoutX="467.0" layoutY="502.0" prefHeight="205.0" prefWidth="345.0">
+      <LineChart fx:id="rsRepOneChart" alternativeColumnFillVisible="true" layoutX="659.0" layoutY="407.0" prefHeight="205.0" prefWidth="345.0">
          <xAxis>
             <NumberAxis label="Protein Concentration (mg/mL)" side="BOTTOM" />
          </xAxis>
@@ -87,7 +87,7 @@
          </yAxis>
       </LineChart>
       <CategoryAxis layoutX="448.0" layoutY="1.0" side="BOTTOM" />
-      <Button fx:id="nextBtn" layoutX="1045.0" layoutY="747.0" mnemonicParsing="false" onAction="#onNextButtonClick" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: #0091FF;" text="NEXT" textFill="WHITE">
+      <Button fx:id="nextBtn" layoutX="1014.0" layoutY="636.0" mnemonicParsing="false" onAction="#onNextButtonClick" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: #0091FF; -fx-background-radius: 20;" text="NEXT" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
@@ -95,7 +95,7 @@
             <Font name="Poppins Medium" size="18.0" />
          </font>
       </Button>
-      <Button fx:id="backBtn" layoutX="901.0" layoutY="747.0" mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: #0091FF;" text="BACK" textFill="WHITE">
+      <Button fx:id="backBtn" layoutX="879.0" layoutY="636.0" mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: #0091FF; -fx-background-radius: 20;" text="BACK" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
@@ -103,7 +103,7 @@
             <Font name="Poppins Medium" size="18.0" />
          </font>
       </Button>
-      <Label alignment="CENTER" layoutX="216.0" layoutY="63.0" prefHeight="41.0" prefWidth="749.0" style="-fx-background-color: #0091fa;" text="BAND INTENSITY (AUC)" textAlignment="CENTER" textFill="WHITE">
+      <Label alignment="CENTER" layoutX="265.0" layoutY="19.0" prefHeight="41.0" prefWidth="749.0" style="-fx-background-color: #0091fa;" text="BAND INTENSITY (AUC)" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>

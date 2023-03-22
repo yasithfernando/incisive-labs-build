@@ -24,7 +24,7 @@ public class HelloApplication extends Application {
         details = new Details();
         HelloApplication.stage = stage;
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("details-page-one.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 1178, 700);
+        Scene scene = new Scene(fxmlLoader.load(), 1178, 720);
         stage.setTitle("Incisive Lab");
         stage.setScene(scene);
         stage.show();

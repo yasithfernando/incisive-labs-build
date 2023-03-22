@@ -16,7 +16,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="700.0" prefWidth="1178.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.incisivelabsbuild.MassCorrectionPageController">
    <children>
-      <TableView fx:id="massCorrectionTable" layoutX="160.0" layoutY="61.0" prefHeight="258.0" prefWidth="844.0">
+      <TableView fx:id="massCorrectionTable" layoutX="160.0" layoutY="62.0" prefHeight="258.0" prefWidth="844.0">
          <columns>
             <TableColumn prefWidth="100.0" text="Sample">
                <cellValueFactory>
@@ -50,7 +50,7 @@
              </TableColumn>
          </columns>
       </TableView>
-      <Button fx:id="nextBtn" layoutX="1022.0" layoutY="670.0" mnemonicParsing="false" onAction="#onNextButtonClick" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: #0091FF;" text="NEXT" textFill="WHITE">
+      <Button fx:id="nextBtn" layoutX="1022.0" layoutY="646.0" mnemonicParsing="false" onAction="#onNextButtonClick" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: #0091FF; -fx-background-radius: 20;" text="NEXT" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
@@ -58,7 +58,7 @@
             <Font name="Poppins Medium" size="18.0" />
          </font>
       </Button>
-      <Button fx:id="backBtn" layoutX="883.0" layoutY="670.0" mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: #0091FF;" text="BACK" textFill="WHITE">
+      <Button fx:id="backBtn" layoutX="883.0" layoutY="646.0" mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: #0091FF; -fx-background-radius: 20;" text="BACK" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
@@ -66,7 +66,7 @@
             <Font name="Poppins Medium" size="18.0" />
          </font>
       </Button>
-      <TableView fx:id="normalisedToDilutionTable" layoutX="156.0" layoutY="392.0" prefHeight="258.0" prefWidth="852.0">
+      <TableView fx:id="normalisedToDilutionTable" layoutX="156.0" layoutY="381.0" prefHeight="258.0" prefWidth="852.0">
          <columns>
             <TableColumn prefWidth="100.0" text="Sample">
                <cellValueFactory>
@@ -105,12 +105,12 @@
             <Font name="Poppins Medium" size="18.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="160.0" layoutY="351.0" prefHeight="41.0" prefWidth="251.0" style="-fx-background-color: #0091fa;" text="Normalised To Dilution" textAlignment="CENTER" textFill="WHITE">
+      <Label alignment="CENTER" layoutX="157.0" layoutY="339.0" prefHeight="41.0" prefWidth="251.0" style="-fx-background-color: #0091fa;" text="Normalised To Dilution" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="Poppins Medium" size="18.0" />
          </font>
       </Label>
-      <AnchorPane prefHeight="676.0" prefWidth="263.0">
+      <AnchorPane layoutX="-1.0" prefHeight="676.0" prefWidth="263.0">
          <children>
             <AnchorPane layoutY="-14.0">
                <children>
